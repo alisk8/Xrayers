@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Xrayers: Classifier</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/classifier.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nav.css') }}">
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/medbot">MedBot</a></li>
+            <li><a href="/hosp">Hospitals</a></li>
+            <li><a href="/">Classifier</a></li>
+        </ul>
+    </div>
+
+    <div class="middle">
+        <h1>Broken Bone Classifier</h1>
+        <form class="form" action="/", method="post" enctype="multipart/form-data">
+            <input required id="file" class="input_img" type="file" name="imagefile">
+            <label for="file" class="label">Select an Image</label>
+            <input class="custom-btn btn" type="submit" value="Submit">
+        </form>
+
+        {% if prediction%}
+            <p class="prediction">{{prediction}}</p>
+        {% endif %}
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Xrayers: Med Bot</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/medbot.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nav.css') }}">
+    <script src="{{ url_for('static',filename='styles/medbot.js') }}"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/medbot">MedBot</a></li>
+          <li><a href="/hosp">Hospitals</a></li>
+          <li><a href="/">Classifier</a></li>
+        </ul>
+    </div>
+
+    <h1 class="names">MEDICAL BOT</h1>
+    <div class="scroll">
+       <ul id="border" class="border">
+      <li class="bot_m">Hey, I am MedBot. I will help with your symptoms. Probably help prevent a visit to the doctor's</li> 
+      <li class="bot_m">Carefully read all the options and please respond by number options that are provided to you.</li>     
+      <li class="bot_m">1. Headache   2. Soreness </li>
+      <li class="bot_m">3. Nausea 4. Common Cold </li>
+      <li class="bot_m">5. Hyperventilation   6. Fever</li>
+      <li class="bot_m">7. Blurred Vision 8. Allergy 9. Frostbite</li>
+
+      </ul>
+    </div>
+    <form onsubmit="return false" class="user_sub">
+        <input id="message" required class= "user_mess" type="text">
+        <button onclick="submit_mes()" type="submit" class="sub_mess">Submit</button>
+    </form>
+  </body>
+</html>

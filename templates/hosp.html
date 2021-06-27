@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xrayers: Hospitals</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/hosp.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nav.css') }}">
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/medbot">MedBot</a></li>
+            <li><a href="/hosp">Hospitals</a></li>
+            <li><a href="/">Classifier</a></li>
+        </ul>
+    </div>
+        <div class="content">
+            <h1>Nearby Hospitals</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d50588.7584345714!2d-122.03044327630825!3d37.583388127819944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitals%20near%20me!5e0!3m2!1sen!2sus!4v1624773672076!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+
+</body>
+</html>

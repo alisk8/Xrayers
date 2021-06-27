@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xrayers: Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/nav.css') }}">
+</head>
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/medbot">MedBot</a></li>
+            <li><a href="/hosp">Hospitals</a></li>
+            <li><a href="/">Classifier</a></li>
+        </ul>
+    </div>
+
+    <div class="cont">
+        <h1>The Xrayers</h1>
+        <p>Since COVID has created a shortage of doctors, Xrayers is a website that helps you cure some of your common symptoms and detect fractured bones. All without a visit to the doctor's office.</p>
+        <p>Head on to the menu bar in the top right corner and check out our features</p>
+    </div>
+</body>
+</html>

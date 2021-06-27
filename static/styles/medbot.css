@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+html {
+  height: 100%;
+}
+body {
+  text-align: center;
+  margin-top: 50px;
+  height: 100%;
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.scroll {
+  border: 2px solid black;
+  height: 400px;
+  margin: auto;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 60%;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.user_sub {
+  min-height: 40px;
+  border: solid 2px black;
+  margin: auto;
+  margin-top: 10px;
+  width: 60%;
+  display: flex;
+}
+
+.user_mess {
+  width: 75%;
+  margin: 2.5px;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 15px;
+}
+
+.sub_mess {
+  width: 25%;
+  margin: 2.5px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  border: solid 1px gainsboro;
+}
+
+.sub_mess:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.bot_m,
+.user_m {
+  font-family: "Red Hat Text", sans-serif;
+  border: 1px solid black;
+  padding: 7px;
+  text-align: left;
+  color: white;
+  margin: 7px;
+  margin-bottom: 3px;
+  width: fit-content;
+  display: table;
+  max-width: 200px;
+}
+
+.bot_m {
+  background-color: rgb(70, 70, 221);
+  border-radius: 20px;
+}
+
+.user_m {
+  background-color: rgb(10, 226, 10);
+  border-radius: 25px;
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+html {
+  height: 100%;
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+}
+.content {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+iframe {
+  width: 60%;
+}
